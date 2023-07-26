@@ -1,4 +1,4 @@
-import { type SozlukQueryResolvers } from "~/schema/types.generated";
+import { type SozlukQueryResolvers } from "../../../../schema/types.generated";
 
 export const term: SozlukQueryResolvers["term"] = (_, { input }, { loaders }) => {
   if (!input) {

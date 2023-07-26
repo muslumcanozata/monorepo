@@ -1,11 +1,11 @@
 import { describe, expect, it, vi } from "vitest";
 import { term } from "./term";
-import { createLoaders } from "~/loaders";
-import { type DataLoaders } from "~/loaders/types";
+import { createLoaders } from "../../../../loaders";
+import { type DataLoaders } from "../../../../loaders/types";
 import { mockedClients } from "../../../../clients/__mocks__/clients";
 
 vi.mock('@kampus/sozluk-content', async () => {
-  const { mockedTerms } = await import('~/loaders/__mocks__/sozluk');
+  const { mockedTerms } = await import('../../../../loaders/__mocks__/sozluk');
   return {
     allTerms: mockedTerms
   }
